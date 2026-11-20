@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081a36">
+  <title>B CASH — Banking Made Simple</title>
+  <style>
+    :root{--navy:#081a36;--navy2:#10294f;--gold:#d8ad52;--cream:#f7f5ef;--ink:#17243a;--muted:#667085}
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink)}
+    header{background:var(--navy);color:#fff;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-weight:800;font-size:25px;letter-spacing:1px}.brand span{color:var(--gold)}
+    nav a{color:#e9edf5;text-decoration:none;margin-left:22px;font-size:14px}
+    .hero{background:linear-gradient(125deg,var(--navy),var(--navy2));color:#fff;padding:76px 7% 82px;display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:center}
+    .eyebrow{color:var(--gold);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+    h1{font-size:clamp(38px,6vw,62px);line-height:1.05;margin:16px 0}
+    .hero p{color:#d8dfeb;line-height:1.7;max-width:570px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .btn{display:inline-block;border-radius:9px;padding:13px 19px;text-decoration:none;font-weight:700}
+    .primary{background:var(--gold);color:#17243a}.secondary{border:1px solid #8290a6;color:#fff}
+    .preview{background:#fff;color:var(--ink);border-radius:18px;padding:24px;box-shadow:0 20px 55px #0004;max-width:360px;width:100%;justify-self:end}
+    .preview small{color:var(--muted)}.balance{font-size:32px;font-weight:800;margin:10px 0 22px}
+    .demo-label{display:inline-block;background:#fff4d8;color:#765719;padding:6px 9px;border-radius:20px;font-size:11px;font-weight:700}
+    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.quick div{background:#f2f4f7;border-radius:10px;padding:13px 5px;text-align:center;font-size:12px}
+    .section{padding:58px 7%}.section h2{text-align:center;font-size:30px;margin:0 0 12px}.lead{text-align:center;color:var(--muted);max-width:650px;margin:0 auto 32px;line-height:1.6}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#fff;border:1px solid #e7e8eb;border-radius:14px;padding:22px}.feature b{display:block;margin:10px 0}.feature p{color:var(--muted);line-height:1.6;font-size:14px}
+    .notice{margin:0 7% 42px;background:#fff8e8;border:1px solid #ead49f;border-radius:12px;padding:18px;color:#5e4a1d;line-height:1.55;font-size:14px}
+    footer{background:var(--navy);color:#d8dfeb;text-align:center;padding:24px;font-size:13px}
+    @media(max-width:720px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:54px}.preview{justify-self:start}.features{grid-template-columns:1fr}.section{padding:45px 6%}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">B <span>CASH</span></div>
+    <nav><a href="#features">Features</a><a href="#about">About</a><a href="#demo">Demo</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="about">
+      <div>
+        <div class="eyebrow">A simpler way to manage money</div>
+        <h1>Banking made<br><span style="color:var(--gold)">simple.</span></h1>
+        <p>Welcome to B CASH. Explore our concept for a clear, convenient digital banking experience designed with customers in mind.</p>
+        <div class="actions"><a class="btn primary" href="#demo">Explore demo</a><a class="btn secondary" href="#features">Learn more</a></div>
+      </div>
+      <div class="preview" id="demo">
+        <span class="demo-label">DEMO PREVIEW — NOT REAL MONEY</span>
+        <p><small>Illustrative demo balance</small></p>
+        <div class="balance">₦250,000.00</div>
+        <div class="quick"><div>＋<br>Deposit</div><div>↗<br>Transfer</div><div>▤<br>History</div></div>
+        <p style="font-size:12px;color:#667085;margin:18px 0 0">Sample figures only. No funds are held or moved.</p>
+      </div>
+    </section>
+    <section class="section" id="features">
+      <h2>Designed around you</h2>
+      <p class="lead">This prototype demonstrates the planned B CASH experience. Features shown here are illustrative and are not connected to banking services.</p>
+      <div class="features">
+        <article class="feature"><div>🔐</div><b>Account security</b><p>A future account experience will require secure sign-in and appropriate safeguards.</p></article>
+        <article class="feature"><div>📊</div><b>Clear dashboard</b><p>A simple overview concept for balances, account activity and customer information.</p></article>
+        <article class="feature"><div>🧾</div><b>Transaction history</b><p>A planned place to review activity once an authorised banking partner is in place.</p></article>
+      </div>
+    </section>
+    <div class="notice"><strong>Important:</strong> B CASH is currently a demonstration project, not a licensed bank or live financial service. Do not enter real BVN, NIN, passwords, card details or bank information. Deposits, withdrawals and transfers are disabled. Real-money services require the appropriate regulatory authorisation and a licensed financial-services partner.</div>
+  </main>
+  <footer>© 2026 B CASH Demo Project · Banking Made Simple</footer>
+</body>
+</html>
